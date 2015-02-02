@@ -82,10 +82,10 @@ class DiskQuota
 				}
 			} 
 			/*** Check if it is a symbolic link, ignore thie file ***/
-            else if(is_link($dir))
-            {
-                continue;
-            }
+			else if(is_link($dir))
+			{
+				continue;
+			}
 			else 
 			{
 				/*** If not a directory then get the size of the file ***/

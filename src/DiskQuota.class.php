@@ -130,8 +130,8 @@ class DiskQuota
 	public function format_bytes($size, $precision = 2)
 	{
 		$suffixes = array('', 'KB', 'MB', 'GB', 'TB');   
-        if($size == 0) 
-            return 0 . $suffixes[0];
+		if($size == 0) 
+			return 0 . $suffixes[0];
 		$base = log($size, 1024);
 		$converted = round(pow(1024, $base - floor($base)), $precision) . $suffixes[floor($base)];
 		
